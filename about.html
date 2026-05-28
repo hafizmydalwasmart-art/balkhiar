@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pendidikan - Babul Khairat</title>
+    <meta name="description" content="Jenjang Pendidikan Terpadu di Pondok Pesantren Babul Khairat (Balkhair)">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@400;600;700;800&display=swap"
+        rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        serif: ['Playfair Display', 'serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <script>
+            (function () { if (!window.chatbase || window.chatbase("getState") !== "initialized") { window.chatbase = (...arguments) => { if (!window.chatbase.q) { window.chatbase.q = [] } window.chatbase.q.push(arguments) }; window.chatbase = new Proxy(window.chatbase, { get(target, prop) { if (prop === "q") { return target.q } return (...args) => target(prop, ...args) } }) } const onLoad = function () { const script = document.createElement("script"); script.src = "https://www.chatbase.co/embed.min.js"; script.id = "ScojlLOr7-l5lHErNyenA"; script.domain = "www.chatbase.co"; document.body.appendChild(script) }; if (document.readyState === "complete") { onLoad() } else { window.addEventListener("load", onLoad) } })();
+    </script>
+</head>
+
+<body class="bg-gray-50 flex flex-col min-h-screen font-sans">
+
+    <!-- Inner Page Hero + Header Wrapper (Dark Mode) -->
+    <div class="relative bg-[#132c45] flex flex-col font-sans overflow-hidden">
+        <!-- Background Overlay -->
+        <div class="absolute inset-0 z-0">
+            <img src="unnamed (3).webp" class="w-full h-full object-cover filter contrast-[1.1] brightness-[0.9]"
+                alt="Background">
+            <!-- More transparent blue teal overlay -->
+            <div class="absolute inset-0 bg-[#132c45]/50"></div>
+            <!-- Circular pattern simulation -->
+            <div class="absolute inset-0"
+                style="background-image: radial-gradient(rgba(255,255,255,0.06) 2px, transparent 2px); background-size: 50px 50px;">
+            </div>
+        </div>
+
+        <!-- Transparent Header -->
+        <header class="relative z-50 w-full pt-6 pb-4 border-b border-white/5 shadow-sm">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="flex justify-between items-center h-16">
+                    <!-- Logo -->
+                    <div class="flex-shrink-0 flex items-center space-x-3 cursor-pointer"
+                        onclick="window.location.href='index.html'">
+                        <img src="logo.jpg" alt="Logo"
+                            class="w-12 h-12 rounded-full border-2 border-white shadow-sm bg-white object-cover">
+                        <div class="flex flex-col leading-tight">
+                            <span class="text-white text-xs font-semibold tracking-wide">Pondok Pesantren</span>
+                            <span class="text-[#dfb23c] font-bold text-lg md:text-xl font-serif tracking-wide">Babul
+                                Khairat</span>
+                        </div>
+                    </div>
+                    <!-- Navigation -->
+                    <nav class="hidden lg:flex items-center space-x-2 text-sm font-semibold">
+                        <a href="index.html"
+                            class="text-white hover:text-gray-300 px-3 py-2 transition-colors">Beranda</a>
+                        <a href="article.html"
+                            class="text-white hover:text-gray-300 px-3 py-2 transition-colors">Profil</a>
+                        <a href="category.html"
+                            class="text-white hover:text-gray-300 px-3 py-2 transition-colors">Pengurus</a>
+                        <a href="about.html"
+                            class="text-[#dfb23c] border border-gray-500 rounded-full px-4 py-2 relative group flex flex-col items-center hover:bg-white/5 transition-colors">
+                            Pendidikan
+                            <div class="absolute bottom-1 w-4 border-b-[3px] border-[#dfb23c]"></div>
+                        </a>
+                        <a href="program.html"
+                            class="text-white hover:text-gray-300 px-3 py-2 transition-colors">Program</a>
+                        <a href="kegiatan.html"
+                            class="text-white hover:text-gray-300 px-3 py-2 transition-colors">Kegiatan</a>
+                        <a href="biaya.html"
+                            class="text-white hover:text-gray-300 px-3 py-2 transition-colors">Biaya</a>
+                        <a href="galeri.html"
+                            class="text-white hover:text-gray-300 px-3 py-2 transition-colors">Galeri</a>
+                        <a href="kontak.html"
+                            class="text-white hover:text-gray-300 px-3 py-2 transition-colors">Kontak</a>
+                    </nav>
+                    <!-- Mobile menu button -->
+                    <div class="lg:hidden flex items-center">
+                        <button id="mobile-menu-btn" class="text-white hover:text-gray-300 focus:outline-none p-2">
+                            <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h16M4 18h16" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Mobile Navigation Menu Dropdown -->
+            <div id="mobile-menu"
+                class="hidden lg:hidden bg-[#0b1d28] absolute w-full top-full left-0 shadow-lg border-t border-gray-700 z-50">
+                <div class="px-4 pt-4 pb-6 space-y-2 text-center text-sm font-semibold">
+                    <a href="index.html" class="block text-white hover:text-[#dfb23c] py-2">Beranda</a>
+                    <a href="article.html" class="block text-white hover:text-[#dfb23c] py-2">Profil</a>
+                    <a href="category.html" class="block text-white hover:text-[#dfb23c] py-2">Pengurus</a>
+                    <a href="about.html" class="block text-[#dfb23c] font-medium py-2">Pendidikan</a>
+                    <a href="program.html" class="block text-white hover:text-[#dfb23c] py-2">Program</a>
+                    <a href="kegiatan.html" class="block text-white hover:text-[#dfb23c] py-2">Kegiatan</a>
+                    <a href="biaya.html" class="block text-white hover:text-[#dfb23c] py-2">Biaya</a>
+                    <a href="galeri.html" class="block text-white hover:text-[#dfb23c] py-2">Galeri</a>
+                    <a href="kontak.html" class="block text-white hover:text-[#dfb23c] py-2">Kontak</a>
+                </div>
+            </div>
+        </header>
+
+        <!-- Page Title Banner -->
+        <div class="relative z-10 py-16 lg:py-24 text-center px-4">
+            <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
+                class="mx-auto mb-6 text-white drop-shadow-md">
+                <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
+                <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>
+            </svg>
+            <h1 class="text-3xl md:text-5xl font-bold text-white font-sans tracking-tight drop-shadow-md mb-3">
+                Jenjang Pendidikan
+            </h1>
+            <p class="text-gray-300 text-sm md:text-base tracking-wide drop-shadow">Sistem Pendidikan Terpadu: Diniyah,
+                Formal, dan Perguruan Tinggi</p>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <main class="flex-grow w-full max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+
+        <p class="text-center text-gray-700 font-medium mb-12 max-w-3xl mx-auto text-sm md:text-base leading-relaxed">
+            Pondok Balkhair memadukan sistem pendidikan terpadu antara <span class="font-bold">Pendidikan Diniyah</span>
+            (Pesantren), <span class="font-bold">Sekolah Formal</span> (Madrasah), dan <span class="font-bold">Perguruan
+                Tinggi</span>.
+        </p>
+
+        <!-- Card 1: Program Pendidikan Diniyah -->
+        <div
+            class="bg-white rounded-2xl shadow-sm border border-gray-100/50 p-6 md:p-8 mb-8 drop-shadow-[0_10px_20px_rgba(0,0,0,0.02)] hover:shadow-md transition-all duration-300">
+            <div class="flex items-center space-x-3 mb-6 pb-4 border-b border-gray-50">
+                <svg class="w-6 h-6 text-gray-800" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253">
+                    </path>
+                </svg>
+                <h2 class="text-xl md:text-2xl font-bold text-gray-900 tracking-tight">Program Pendidikan Diniyah
+                    (Pesantren)</h2>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 pl-2">
+                <!-- item 1 -->
+                <div
+                    class="flex items-start p-4 border border-gray-100 rounded-xl bg-gray-50/70 hover:bg-white transition-colors">
+                    <svg class="w-5 h-5 text-gray-500 mr-3 shrink-0 mt-0.5" fill="none" stroke="currentColor"
+                        viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                    </svg>
+                    <div>
+                        <h3 class="font-bold text-gray-800 text-[0.85rem] leading-tight mb-1">Madrasah Ibtidaiyah</h3>
+                        <p class="text-[0.75rem] text-gray-500">Tingkat Dasar</p>
+                    </div>
+                </div>
+                <!-- item 2 -->
+                <div
+                    class="flex items-start p-4 border border-gray-100 rounded-xl bg-gray-50/70 hover:bg-white transition-colors">
+                    <svg class="w-5 h-5 text-gray-500 mr-3 shrink-0 mt-0.5" fill="none" stroke="currentColor"
+                        viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                    </svg>
+                    <div>
+                        <h3 class="font-bold text-gray-800 text-[0.85rem] leading-tight mb-1">Madrasah Tsanawiyah</h3>
+                        <p class="text-[0.75rem] text-gray-500">Tingkat Wustho</p>
+                    </div>
+                </div>
+                <!-- item 3 -->
+                <div
+                    class="flex items-start p-4 border border-gray-100 rounded-xl bg-gray-50/70 hover:bg-white transition-colors">
+                    <svg class="w-5 h-5 text-gray-500 mr-3 shrink-0 mt-0.5" fill="none" stroke="currentColor"
+                        viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                    </svg>
+                    <div>
+                        <h3 class="font-bold text-gray-800 text-[0.85rem] leading-tight mb-1">Madrasah Aliyah</h3>
+                        <p class="text-[0.75rem] text-gray-500">Tingkat Ulya</p>
+                    </div>
+                </div>
+                <!-- item 4 -->
+                <div
+                    class="flex items-start p-4 border border-gray-100 rounded-xl bg-gray-50/70 hover:bg-white transition-colors">
+                    <svg class="w-5 h-5 text-gray-500 mr-3 shrink-0 mt-0.5" fill="none" stroke="currentColor"
+                        viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                    </svg>
+                    <div>
+                        <h3 class="font-bold text-gray-800 text-[0.85rem] leading-tight mb-1">Program Takhassus</h3>
+                        <p class="text-[0.75rem] text-gray-500">Pendalaman Kitab Kuning</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card 2: Program Pendidikan Formal -->
+        <div
+            class="bg-white rounded-2xl shadow-sm border border-gray-100/50 p-6 md:p-8 mb-8 drop-shadow-[0_10px_20px_rgba(0,0,0,0.02)] hover:shadow-md transition-all duration-300">
+            <div class="flex items-center space-x-3 mb-6 pb-4 border-b border-gray-50">
+                <svg class="w-6 h-6 text-gray-800" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4">
+                    </path>
+                </svg>
+                <h2 class="text-xl md:text-2xl font-bold text-gray-900 tracking-tight">Program Pendidikan Formal
+                    (Depag/Diknas)</h2>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 pl-2">
+                <!-- PAUD Box (Replaced MI with PAUD as requested) -->
+                <div
+                    class="bg-blue-50/60 border border-blue-100 rounded-xl p-5 relative overflow-hidden flex flex-col items-start hover:-translate-y-1 transition-transform duration-300">
+                    <div class="flex items-center space-x-3 mb-3">
+                        <div class="bg-blue-500 text-white p-2.5 rounded-lg">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z">
+                                </path>
+                            </svg>
+                        </div>
+                        <h3 class="font-bold text-gray-900 text-base">PAUD Balkhair</h3>
+                    </div>
+                    <span
+                        class="inline-block bg-green-500 text-white text-[0.65rem] font-bold px-2 py-0.5 rounded shadow-sm uppercase tracking-wider">Terakreditasi
+                        A</span>
+                </div>
+
+                <!-- MTs Box -->
+                <div
+                    class="bg-blue-50/60 border border-blue-100 rounded-xl p-5 relative overflow-hidden flex flex-col items-start hover:-translate-y-1 transition-transform duration-300">
+                    <div class="flex items-center space-x-3 mb-3">
+                        <div class="bg-blue-600 text-white p-2.5 rounded-lg">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253">
+                                </path>
+                            </svg>
+                        </div>
+                        <h3 class="font-bold text-gray-900 text-base">MTs Balkhair</h3>
+                    </div>
+                    <span
+                        class="inline-block bg-green-500 text-white text-[0.65rem] font-bold px-2 py-0.5 rounded shadow-sm uppercase tracking-wider">Terakreditasi
+                        A</span>
+                </div>
+
+                <!-- MA Box -->
+                <div
+                    class="bg-blue-50/60 border border-blue-100 rounded-xl p-5 relative overflow-hidden flex flex-col items-start hover:-translate-y-1 transition-transform duration-300">
+                    <div class="flex items-center space-x-3 mb-3">
+                        <div class="bg-blue-700 text-white p-2.5 rounded-lg">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4">
+                                </path>
+                            </svg>
+                        </div>
+                        <h3 class="font-bold text-gray-900 text-base">SMK Balkhair</h3>
+                    </div>
+                    <span
+                        class="inline-block bg-green-500 text-white text-[0.65rem] font-bold px-2 py-0.5 rounded shadow-sm uppercase tracking-wider mb-2">Terakreditasi
+                        A</span>
+                    <p class="text-[0.7rem] text-gray-500 font-medium">Jurusan: Pertanian dan Perkebunan</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card 3: Perguruan Tinggi -->
+        <div
+            class="bg-[#0b1d28] rounded-2xl shadow-xl border border-[#1a3848] p-6 md:p-8 mb-8 text-white relative overflow-hidden drop-shadow-lg">
+            <!-- decorative background -->
+            <div class="absolute right-0 top-0 opacity-5 w-64 h-64 pointer-events-none">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M12 14l9-5-9-5-9 5 9 5z" />
+                    <path
+                        d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z" />
+                    <path
+                        d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14zm-4 6v-7.5l4-2.222" />
+                </svg>
+            </div>
+
+            <div class="flex items-center space-x-3 mb-2 relative z-10">
+                <svg class="w-6 h-6 text-gray-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path d="M12 14l9-5-9-5-9 5 9 5z" />
+                    <path
+                        d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z" />
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14zm-4 6v-7.5l4-2.222" />
+                </svg>
+                <h2 class="text-xl md:text-2xl font-bold tracking-tight">Perguruan Tinggi</h2>
+            </div>
+            <p class="text-[0.8rem] text-blue-300/80 mb-8 font-medium relative z-10">Menyediakan jenjang strata S1.</p>
+
+            <div class="space-y-4 relative z-10">
+                <!-- S1 Section -->
+                <div
+                    class="bg-[#122c3e] rounded-xl p-5 border border-[#1d4155]/60 hover:border-[#1d4155] transition-colors">
+                    <div class="flex items-center space-x-2 mb-4">
+                        <svg class="text-[#dfb23c] w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd"
+                                d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                                clip-rule="evenodd"></path>
+                        </svg>
+                        <h3 class="font-bold text-[#dfb23c] text-[0.95rem] font-serif">Program Sarjana (S1)</h3>
+                    </div>
+                    <div class="grid grid-cols-1 md:grid-cols-1 gap-4">
+                        <!-- Fakultas 1 -->
+                        <div class="bg-[#0b1d28]/80 rounded-lg p-5 border border-[#1a3848]">
+                            <h4
+                                class="text-[0.75rem] font-bold text-gray-300 uppercase tracking-widest mb-3 border-b border-[#1a3848] pb-2">
+                                Fakultas Tarbiyah</h4>
+                            <ul class="text-[0.85rem] text-gray-400 space-y-2.5 list-disc list-inside">
+                                <li>Pendidikan Agama Islam (PAI)</li>
+                                <li>Manajemen Bisnis Syariah (MBS)</li>
+                                <li>Manajemen Pendidikan Islam (MPI)</li>
+                                <li>Pendidikan Guru Madrasah Ibtidaiyah (PGMI)</li>
+                            </ul>
+                        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 border-t border-gray-800 mt-auto py-12 text-center text-gray-400 font-sans">
+        <h2 class="text-2xl font-serif text-white font-bold tracking-widest mb-4">Babul Khairat</h2>
+        <p class="text-sm max-w-2xl mx-auto mb-8 px-4">Pondok Pesantren dengan manhaj Ahlussunnah wal Jama'ah,
+            berdedikasi melahirkan kader ulama dan cendekiawan muslim yang berintegritas.</p>
+        <div class="text-sm border-t border-gray-800 pt-8 mt-8">
+            <p>&copy; 2026 Pondok Pesantren Babul Khairat. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Interactive Scripts -->
+    <script>
+        // Toggle Mobile Menu
+        const btn = document.getElementById('mobile-menu-btn');
+        const menu = document.getElementById('mobile-menu');
+
+        if (btn && menu) {
+            btn.addEventListener('click', () => {
+                menu.classList.toggle('hidden');
+            });
+        }
+    </script>
+</body>
+
+</html>

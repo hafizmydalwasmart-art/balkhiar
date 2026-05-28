@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeri - Babul Khairat</title>
+    <meta name="description"
+        content="Kumpulan galeri dokumentasi kegiatan, fasilitas, dan momen berharga di Pondok Pesantren.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@400;600;700;800&display=swap"
+        rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        serif: ['Playfair Display', 'serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <script>
+            (function () { if (!window.chatbase || window.chatbase("getState") !== "initialized") { window.chatbase = (...arguments) => { if (!window.chatbase.q) { window.chatbase.q = [] } window.chatbase.q.push(arguments) }; window.chatbase = new Proxy(window.chatbase, { get(target, prop) { if (prop === "q") { return target.q } return (...args) => target(prop, ...args) } }) } const onLoad = function () { const script = document.createElement("script"); script.src = "https://www.chatbase.co/embed.min.js"; script.id = "ScojlLOr7-l5lHErNyenA"; script.domain = "www.chatbase.co"; document.body.appendChild(script) }; if (document.readyState === "complete") { onLoad() } else { window.addEventListener("load", onLoad) } })();
+    </script>
+    <style>
+        .hover-img-zoom:hover img {
+            transform: scale(1.05);
+        }
+
+        .hover-img-zoom img {
+            transition: transform 0.5s ease;
+        }
+    </style>
+</head>
+
+<body class="bg-gray-50 flex flex-col min-h-screen font-sans">
+
+    <!-- Inner Page Hero + Header Wrapper (Dark Mode) -->
+    <div class="relative bg-[#132c45] flex flex-col font-sans overflow-hidden">
+        <!-- Background Overlay -->
+        <div class="absolute inset-0 z-0">
+            <img src="unnamed (3).webp" class="w-full h-full object-cover filter contrast-[1.1] brightness-[0.9]"
+                alt="Background">
+            <!-- More transparent blue teal overlay -->
+            <div class="absolute inset-0 bg-[#132c45]/50"></div>
+            <!-- Circular pattern simulation -->
+            <div class="absolute inset-0"
+                style="background-image: radial-gradient(rgba(255,255,255,0.06) 2px, transparent 2px); background-size: 50px 50px;">
+            </div>
+        </div>
+
+        <!-- Transparent Header -->
+        <header class="relative z-50 w-full pt-6 pb-4 border-b border-white/5 shadow-sm">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="flex justify-between items-center h-16">
+                    <!-- Logo -->
+                    <div class="flex-shrink-0 flex items-center space-x-3 cursor-pointer"
+                        onclick="window.location.href='index.html'">
+                        <img src="logo.jpg" alt="Logo"
+                            class="w-12 h-12 rounded-full border-2 border-white shadow-sm bg-white object-cover">
+                        <div class="flex flex-col leading-tight">
+                            <span class="text-white text-xs font-semibold tracking-wide">Pondok Pesantren</span>
+                            <span class="text-[#dfb23c] font-bold text-lg md:text-xl font-serif tracking-wide">Babul
+                                Khairat</span>
+                        </div>
+                    </div>
+                    <!-- Navigation -->
+                    <nav class="hidden lg:flex items-center space-x-2 text-sm font-semibold">
+                        <a href="index.html"
+                            class="text-white hover:text-gray-300 px-3 py-2 transition-colors">Beranda</a>
+                        <a href="article.html"
+                            class="text-white hover:text-gray-300 px-3 py-2 transition-colors">Profil</a>
+                        <a href="category.html"
+                            class="text-white hover:text-gray-300 px-3 py-2 transition-colors">Pengurus</a>
+                        <a href="about.html"
+                            class="text-white hover:text-gray-300 px-3 py-2 transition-colors">Pendidikan</a>
+                        <a href="program.html"
+                            class="text-white hover:text-gray-300 px-3 py-2 transition-colors">Program</a>
+                        <a href="kegiatan.html"
+                            class="text-white hover:text-gray-300 px-3 py-2 transition-colors">Kegiatan</a>
+                        <a href="biaya.html"
+                            class="text-white hover:text-gray-300 px-3 py-2 transition-colors">Biaya</a>
+                        <a href="galeri.html"
+                            class="text-[#dfb23c] rounded-full px-4 py-2 relative group flex flex-col items-center hover:bg-white/5 transition-colors">
+                            Galeri
+                            <div class="absolute bottom-1 w-4 border-b-[3px] border-[#dfb23c]"></div>
+                        </a>
+                        <a href="kontak.html"
+                            class="text-white hover:text-gray-300 px-3 py-2 transition-colors">Kontak</a>
+                    </nav>
+                    <!-- Mobile menu button -->
+                    <div class="lg:hidden flex items-center">
+                        <button id="mobile-menu-btn" class="text-white hover:text-gray-300 focus:outline-none p-2">
+                            <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h16M4 18h16" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Mobile Navigation Menu Dropdown -->
+            <div id="mobile-menu"
+                class="hidden lg:hidden bg-[#0b1d28] absolute w-full top-full left-0 shadow-lg border-t border-gray-700 z-50">
+                <div class="px-4 pt-4 pb-6 space-y-2 text-center text-sm font-semibold">
+                    <a href="index.html" class="block text-white hover:text-[#dfb23c] py-2">Beranda</a>
+                    <a href="article.html" class="block text-white hover:text-[#dfb23c] py-2">Profil</a>
+                    <a href="category.html" class="block text-white hover:text-[#dfb23c] py-2">Pengurus</a>
+                    <a href="about.html" class="block text-white hover:text-[#dfb23c] py-2">Pendidikan</a>
+                    <a href="program.html" class="block text-white hover:text-[#dfb23c] py-2">Program</a>
+                    <a href="kegiatan.html" class="block text-white hover:text-[#dfb23c] py-2">Kegiatan</a>
+                    <a href="biaya.html" class="block text-white hover:text-[#dfb23c] py-2">Biaya</a>
+                    <a href="galeri.html" class="block text-[#dfb23c] font-medium py-2">Galeri</a>
+                    <a href="kontak.html" class="block text-white hover:text-[#dfb23c] py-2">Kontak</a>
+                </div>
+            </div>
+        </header>
+
+        <!-- Page Title Banner -->
+        <div class="relative z-10 py-16 md:py-20 text-center px-4">
+            <svg class="w-12 h-12 mx-auto mb-4 text-[#dfb23c] opacity-80" fill="none" stroke="currentColor"
+                viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                    d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z">
+                </path>
+            </svg>
+            <h1
+                class="text-3xl md:text-5xl font-bold font-serif text-white tracking-widest uppercase drop-shadow-md mb-3">
+                Galeri Foto</h1>
+            <p class="text-gray-300 text-sm md:text-base max-w-2xl mx-auto drop-shadow font-light">Potret momen,
+                fasilitas, dan rekam jejak perjuangan santri dalam menggali keilmuan</p>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <main class="flex-grow w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+
+        <!-- Filter Kategori -->
+        <div class="flex flex-wrap justify-center gap-3 mb-12" id="gallery-filters">
+            <button id="filter-semua" onclick="filterGallery('semua')"
+                class="filter-btn bg-[#132c45] text-white px-5 py-2 rounded-full text-sm font-semibold shadow-md transition-all cursor-pointer">Semua</button>
+            <button id="filter-kegiatan" onclick="filterGallery('kegiatan')"
+                class="filter-btn bg-white border border-gray-200 text-gray-600 hover:text-gray-900 hover:border-[#132c45] px-5 py-2 rounded-full text-sm font-semibold shadow-sm transition-all cursor-pointer">Kegiatan
+                Santri</button>
+            <button id="filter-fasilitas" onclick="filterGallery('fasilitas')"
+                class="filter-btn bg-white border border-gray-200 text-gray-600 hover:text-gray-900 hover:border-[#132c45] px-5 py-2 rounded-full text-sm font-semibold shadow-sm transition-all cursor-pointer">Fasilitas
+                Pondok</button>
+            <button id="filter-acara" onclick="filterGallery('acara')"
+                class="filter-btn bg-white border border-gray-200 text-gray-600 hover:text-gray-900 hover:border-[#132c45] px-5 py-2 rounded-full text-sm font-semibold shadow-sm transition-all cursor-pointer">Acara
+                Besar</button>
+        </div>
+
+        <!-- Photo Grid -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6" id="gallery-grid">
+
+            <!-- Foto 1 -->
+            <div data-category="acara"
+                class="gallery-item relative rounded-2xl overflow-hidden group hover-img-zoom shadow-md border border-gray-100 aspect-square">
+                <img src="WhatsApp Image 2026-01-31 at 19.10.31 (1).jpeg" class="w-full h-full object-cover">
+                <div
+                    class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-5">
+                    <span class="text-[#dfb23c] text-xs font-bold uppercase tracking-wider mb-1">Acara</span>
+                    <h3 class="text-white text-lg font-bold leading-tight">pembacaan hadroh basaudan</h3>
+                </div>
+            </div>
+
+            <!-- Foto 2 -->
+            <div data-category="fasilitas"
+                class="gallery-item relative rounded-2xl overflow-hidden group hover-img-zoom shadow-md border border-gray-100 sm:row-span-2 aspect-[3/4] sm:aspect-auto">
+                <img src="unnamed (3).webp" class="w-full h-full object-cover">
+                <div
+                    class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
+                    <span class="text-[#dfb23c] text-xs font-bold uppercase tracking-wider mb-1">Fasilitas</span>
+                    <h3 class="text-white text-xl font-bold leading-tight">Gedung asrama</h3>
+                    <p class="text-gray-300 text-sm mt-2 line-clamp-2">Fasilitas bagi santri untuk memperkaya literasi
+                        dan melakukan muthola'ah mandiri.</p>
+                </div>
+            </div>
+
+            <!-- Foto 3 -->
+            <div data-category="kegiatan"
+                class="gallery-item relative rounded-2xl overflow-hidden group hover-img-zoom shadow-md border border-gray-100 aspect-square">
+                <img src="Pelajaran di ruang pendidikan Islam.png" class="w-full h-full object-cover">
+                <div
+                    class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-5">
+                    <span class="text-[#dfb23c] text-xs font-bold uppercase tracking-wider mb-1">Kegiatan Santri</span>
+                    <h3 class="text-white text-lg font-bold leading-tight">Kajian Kitab Kuning Pagi</h3>
+                </div>
+            </div>
+
+            <!-- Foto 4 -->
+            <div data-category="kegiatan"
+                class="gallery-item relative rounded-2xl overflow-hidden group hover-img-zoom shadow-md border border-gray-100 aspect-square sm:col-span-2 lg:col-span-1">
+                <img src="WhatsApp Image 2026-01-31 at 19.10.17 (1).jpeg">
+                <div
+                    class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-5">
+                    <span class="text-[#dfb23c] text-xs font-bold uppercase tracking-wider mb-1">Keagamaan</span>
+                    <h3 class="text-white text-lg font-bold leading-tight">Kekhusyukan Sholat Berjamaah</h3>
+                </div>
+            </div>
+
+            <!-- Foto 5 -->
+            <div data-category="fasilitas"
+                class="gallery-item relative rounded-2xl overflow-hidden group hover-img-zoom shadow-md border border-gray-100 sm:col-span-2 md:col-span-2 aspect-[16/9] sm:aspect-auto sm:h-64 md:h-auto">
+                <img src="WhatsApp Image 2026-01-31 at 19.10.17 (2).jpeg" class="w-full h-full object-cover">
+                <div
+                    class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
+                    <span class="text-[#dfb23c] text-xs font-bold uppercase tracking-wider mb-1">Suasana</span>
+                    <h3 class="text-white text-xl font-bold leading-tight">Lingkungan Islami</h3>
+                    <p class="text-gray-300 text-sm mt-2 max-w-lg">Suasana religius yang mendukung pembentukan karakter
+                        Islami melalui rutinitas ibadah dan pembelajaran.</p>
+                </div>
+            </div>
+
+            <!-- Foto 6 -->
+            <div data-category="kegiatan"
+                class="gallery-item relative rounded-2xl overflow-hidden group hover-img-zoom shadow-md border border-gray-100 aspect-square">
+                <img src="Siswa mempelajari bersama di ruang Islam.png" class="w-full h-full object-cover">
+                <div
+                    class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-5">
+                    <span class="text-[#dfb23c] text-xs font-bold uppercase tracking-wider mb-1">Kegiatan Santri</span>
+                    <h3 class="text-white text-lg font-bold leading-tight">Muthola'ah Bersama Teman</h3>
+                </div>
+            </div>
+
+            <!-- Foto 7 (Acara) -->
+            <div data-category="acara"
+                class="gallery-item relative rounded-2xl overflow-hidden group hover-img-zoom shadow-md border border-gray-100 aspect-square sm:col-span-2 md:col-span-1">
+                <img src="WhatsApp Image 2026-02-01 at 09.34.00 (1).jpeg" class="w-full h-full object-cover">
+                <div
+                    class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-5">
+                    <span class="text-[#dfb23c] text-xs font-bold uppercase tracking-wider mb-1">Acara Besar</span>
+                    <h3 class="text-white text-lg font-bold leading-tight">Peringatan Maulid Nabi</h3>
+                </div>
+            </div>
+
+            <!-- Foto 8 (Fasilitas) -->
+            <div data-category="fasilitas"
+                class="gallery-item relative rounded-2xl overflow-hidden group hover-img-zoom shadow-md border border-gray-100 aspect-square">
+                <img src="unnamed (1).webp" class="w-full h-full object-cover">
+                <div
+                    class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-5">
+                    <span class="text-[#dfb23c] text-xs font-bold uppercase tracking-wider mb-1">Fasilitas</span>
+                    <h3 class="text-white text-lg font-bold leading-tight">Asrama Santri Putra</h3>
+                </div>
+            </div>
+
+            <!-- Foto 9 (Acara) -->
+            <div data-category="acara"
+                class="gallery-item relative rounded-2xl overflow-hidden group hover-img-zoom shadow-md border border-gray-100 aspect-square">
+                <img src="WhatsApp Image 2026-01-31 at 19.10.28.jpeg" class="w-full h-full object-cover">
+                <div
+                    class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-5">
+                    <span class="text-[#dfb23c] text-xs font-bold uppercase tracking-wider mb-1">Acara Besar</span>
+                    <h3 class="text-white text-lg font-bold leading-tight">Buka Puasa Bersama di Bulan Ramadhan</h3>
+                </div>
+            </div>
+
+            <!-- Foto 10 (Fasilitas) -->
+            <div data-category="fasilitas"
+                class="gallery-item relative rounded-2xl overflow-hidden group hover-img-zoom shadow-md border border-gray-100 sm:col-span-2 md:col-span-2 aspect-[16/9] sm:aspect-auto sm:h-64 md:h-auto">
+                <img src="unnamed (5).webp" class="w-full h-full object-cover">
+                <div
+                    class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
+                    <span class="text-[#dfb23c] text-xs font-bold uppercase tracking-wider mb-1">Fasilitas</span>
+                    <h3 class="text-white text-xl font-bold leading-tight">Lapangan Olahraga Serbaguna</h3>
+                    <p class="text-gray-300 text-sm mt-2 max-w-lg">Fasilitas untuk kegiatan jasmani dan ekstrakurikuler
+                        santri guna menjaga kebugaran jasmani.</p>
+                </div>
+            </div>
+
+            <!-- Foto 11 (Acara) -->
+            <div data-category="acara"
+                class="gallery-item relative rounded-2xl overflow-hidden group hover-img-zoom shadow-md border border-gray-100 aspect-square">
+                <img src="unnamed.webp" class="w-full h-full object-cover">
+                <div
+                    class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-5">
+                    <span class="text-[#dfb23c] text-xs font-bold uppercase tracking-wider mb-1">Fasilitas</span>
+                    <h3 class="text-white text-lg font-bold leading-tight">Mushollah Pondok Pesantren</h3>
+                </div>
+            </div>
+
+        </div>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 border-t border-gray-800 mt-12 py-12 text-center text-gray-400 font-sans">
+        <h2 class="text-2xl font-serif text-white font-bold tracking-widest mb-4">Babul Khairat</h2>
+        <p class="text-sm max-w-2xl mx-auto mb-8 px-4">Pondok Pesantren dengan manhaj Ahlussunnah wal Jama'ah,
+            berdedikasi melahirkan kader ulama dan cendekiawan muslim yang berintegritas.</p>
+        <div class="text-sm border-t border-gray-800 pt-8 mt-8">
+            <p>&copy; 2026 Pondok Pesantren Babul Khairat
+                . All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        const btn = document.getElementById('mobile-menu-btn');
+        const menu = document.getElementById('mobile-menu');
+        if (btn && menu) {
+            btn.addEventListener('click', () => {
+                menu.classList.toggle('hidden');
+            });
+        }
+
+        // Gallery Filter Logic
+        function filterGallery(category) {
+            // Update filter buttons
+            const buttons = document.querySelectorAll('.filter-btn');
+            buttons.forEach(btn => {
+                btn.className = "filter-btn bg-white border border-gray-200 text-gray-600 hover:text-gray-900 hover:border-[#132c45] px-5 py-2 rounded-full text-sm font-semibold shadow-sm transition-all cursor-pointer";
+            });
+            const activeBtn = document.getElementById('filter-' + category);
+            if (activeBtn) {
+                activeBtn.className = "filter-btn bg-[#132c45] text-white px-5 py-2 rounded-full text-sm font-semibold shadow-md transition-all cursor-pointer";
+            }
+
+            // Update gallery items
+            const items = document.querySelectorAll('.gallery-item');
+            items.forEach(item => {
+                if (category === 'semua' || item.getAttribute('data-category') === category) {
+                    item.classList.remove('hidden');
+                } else {
+                    item.classList.add('hidden');
+                }
+            });
+        }
+    </script>
+</body>
+
+</html>
